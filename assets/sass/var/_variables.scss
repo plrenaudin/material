@@ -1,5 +1,5 @@
 // base
-	$base:     6px;
+	$base:     8px;
 	$css-path: ".";
 
 // colour
@@ -46,7 +46,7 @@
 	// other
 		$avatar-height:         ($base * 5);    // 40px
 		$btn-height:            ($base * 4.5);  // 36px
-		$header-height:         ($base * 7);    // 56px
+		$header-height:         ($base * 6);    // 56px
 		$nav-height:            ($base * 6);    // 48px
 
 		$cell-height:           $nav-height;    // 48px
