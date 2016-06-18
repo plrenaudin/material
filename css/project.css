@@ -1,15 +1,14 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500,500italic);
 body {
-  padding-bottom: 69px;
+  padding-bottom: 52px;
 }
 
 .ui-content-header {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: -58px;
-  padding-top: 68px;
-  padding-bottom: 58px;
+  margin-bottom: -43.5px;
+  padding-top: 51px;
+  padding-bottom: 43.5px;
 }
 .page-brand .ui-content-header {
   background-image: url(./images/bg/brand.jpg);
@@ -18,8 +17,8 @@ body {
 .ui-footer {
   border-top: 1px solid rgba(0, 0, 0, 0.12);
   text-align: center;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -32,10 +31,7 @@ body {
 
 .ui-picker-divider {
   background-color: #dadada;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 auto;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  flex: 0 0 auto;
   position: relative;
   width: 1px;
   z-index: 1;
@@ -43,8 +39,8 @@ body {
 
 .ui-picker-draggable-count {
   position: absolute;
-  top: -16px;
-  right: -16px;
+  top: -12px;
+  right: -12px;
 }
 
 .ui-picker-draggable-handler {
@@ -73,35 +69,31 @@ body {
 
 .ui-picker-info, .ui-picker-nav {
   background-color: #ffffff;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 auto;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  flex: 0 0 auto;
   overflow: hidden;
   position: relative;
-  -webkit-transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   width: 0;
 }
 
 .ui-picker-info-active {
-  width: 400px;
+  width: 300px;
 }
 
 .ui-picker-info-detail {
-  padding-right: 16px;
-  padding-left: 16px;
+  padding-right: 12px;
+  padding-left: 12px;
 }
 
 .ui-picker-info-null:after {
   background-color: #f5f5f5;
   content: "Select an item to view its details.";
   display: block;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 300;
   height: 100%;
-  line-height: 28px;
-  padding: 58px 16px;
+  line-height: 21px;
+  padding: 43.5px 12px;
   position: absolute;
   top: 0;
   left: 0;
@@ -122,7 +114,6 @@ body {
 
 .ui-picker-item {
   position: relative;
-  -webkit-transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .ui-picker-lib.ui-picker-dragging .ui-picker-item.ui-picker-draggable {
@@ -130,7 +121,7 @@ body {
 }
 
 .ui-picker-lib {
-  min-height: calc(100vh - 56px);
+  min-height: calc(100vh - 42px);
 }
 .ui-picker-lib:after, .ui-picker-lib:before {
   content: "";
@@ -142,26 +133,23 @@ body {
 }
 
 .ui-picker-main {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  flex: 1 1 auto;
   position: relative;
 }
 
 .ui-picker-map-wrap {
-  height: 225px;
-  width: 400px;
+  height: 168.75px;
+  width: 300px;
 }
 
 .ui-picker-nav {
-  width: 240px;
+  width: 180px;
 }
 
 .ui-picker-page {
   height: 100vh;
   min-width: 992px;
-  padding-top: 56px;
+  padding-top: 42px;
   padding-bottom: 0;
 }
 
@@ -176,27 +164,20 @@ body {
 }
 
 .ui-picker-wrap {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   height: 100%;
   overflow: hidden;
   width: 100%;
 }
 
 .ui-draggable-helper {
-  width: 208px !important;
+  width: 156px !important;
 }
 
 .ui-droppable-helper {
-  background-color: rgba(255, 64, 129, 0.09) !important;
-  border-color: #ff4081 !important;
+  background-color: rgba(63, 81, 181, 0.09) !important;
+  border-color: #3f51b5 !important;
 }
 
 .ui-selectable-helper {
@@ -208,13 +189,7 @@ body {
 }
 
 .ui-card-pre {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+  align-items: center;
   display: flex;
 }
 @media only screen and (min-width: 768px) {
@@ -240,8 +215,8 @@ body {
 }
 
 .ui-card-wrap {
-  margin-top: 24px;
-  margin-bottom: -24px;
+  margin-top: 18px;
+  margin-bottom: -18px;
 }
 .ui-card-wrap:after, .ui-card-wrap:before {
   content: "";
@@ -256,5 +231,5 @@ body {
 }
 
 .ui-tab {
-  margin-top: 10px;
+  margin-top: 7.5px;
 }
