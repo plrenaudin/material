@@ -31,7 +31,9 @@ body {
 
 .ui-picker-divider {
   background-color: #dadada;
-  flex: 0 0 auto;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   position: relative;
   width: 1px;
   z-index: 1;
@@ -69,9 +71,12 @@ body {
 
 .ui-picker-info, .ui-picker-nav {
   background-color: #ffffff;
-  flex: 0 0 auto;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   overflow: hidden;
   position: relative;
+  -webkit-transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   width: 0;
 }
@@ -114,6 +119,7 @@ body {
 
 .ui-picker-item {
   position: relative;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .ui-picker-lib.ui-picker-dragging .ui-picker-item.ui-picker-draggable {
@@ -133,7 +139,9 @@ body {
 }
 
 .ui-picker-main {
-  flex: 1 1 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   position: relative;
 }
 
@@ -164,8 +172,13 @@ body {
 }
 
 .ui-picker-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   height: 100%;
   overflow: hidden;
   width: 100%;
@@ -176,8 +189,8 @@ body {
 }
 
 .ui-droppable-helper {
-  background-color: rgba(63, 81, 181, 0.09) !important;
-  border-color: #3f51b5 !important;
+  background-color: rgba(33, 150, 243, 0.09) !important;
+  border-color: #2196f3 !important;
 }
 
 .ui-selectable-helper {
@@ -189,7 +202,11 @@ body {
 }
 
 .ui-card-pre {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 @media only screen and (min-width: 768px) {
