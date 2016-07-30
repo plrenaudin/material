@@ -64,7 +64,12 @@
 		padding-bottom: (($fbtn-height + $base * 2 - $line-height-h4) / 2);
 		width: ($fbtn-height + $base * 2);
 	}
-
+	.fbtn-sm {
+		font-size: $font-size;
+		height: $fbtn-sm-height;
+		padding: (($fbtn-height - $line-height) / 3) 0;
+		width: $fbtn-sm-height;
+	}
 .fbtn-container {
 	backface-visibility: hidden;
 	position: fixed;
